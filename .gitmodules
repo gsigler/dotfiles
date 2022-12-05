@@ -8,3 +8,9 @@
 [submodule "pure"]
 	path = pure
 	url = https://github.com/sindresorhus/pure.git
+[submodule "zsh-syntax-highlighting"]
+	path = zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "nx-completion"]
+	path = nx-completion
+	url = https://github.com/jscutlery/nx-completion.git

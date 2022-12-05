@@ -4,11 +4,16 @@
 
 - clean: ["~"]
 
+- create:
+    - ~/.zsh
+
 - link:
     ~/.zshrc:
-      force: true
     ~/.oh-my-zsh:
-    ~/.pure:
+    ~/.zsh/pure: pure
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
+    ~/.oh-my-zsh/custom/plugins/nx-completion: nx-completion
+    ~/.shell:
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
