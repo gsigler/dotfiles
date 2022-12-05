@@ -8,6 +8,7 @@
     ~/.zshrc:
       force: true
     ~/.oh-my-zsh:
+    ~/.pure:
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
