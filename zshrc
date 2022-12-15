@@ -1,20 +1,25 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="random"
+ZSH_THEME="spaceship"
 
 plugins=(git aws kubectl docker yarn nx-completion zsh-syntax-highlighting)
 
+autoload -Uz compinit && compinit -i
+
 SHOW_AWS_PROMPT=false
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=0'
+# bindkey '\e' autosuggest-accept
 
 source $ZSH/oh-my-zsh.sh
 
+source <(pulumi gen-completion zsh)
 
 # Aliases
 source ~/.shell/aliases.sh
 
-# # Enable pure Prompt
-# fpath+=($HOME/.pure)
-# autoload -U promptinit; promptinit
-# prompt pure
+
+
+# Add to path
+export PATH="${PATH}:${HOME}/npm/bin"
 
